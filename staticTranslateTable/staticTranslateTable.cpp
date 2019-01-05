@@ -4,22 +4,16 @@
 #include "pch.h"
 #include <stdio.h>
 #include <string>
-
-template<typename K, typename V>
-struct TranslatePair
-{
-	K key;
-	V value;
-};
+#include <utility>
 
 // TODO: needs template specialization for types,
 // that cannot be compare with simple equality (e.g. strings).
 template<typename K, typename V, size_t N>
-V lookup(K needle, TranslatePair<K,V> (&lut)[N], V notFoundValue = nullptr)
+V lookup(K needle, std::pair<K,V> (&lut)[N], V notFoundValue = nullptr)
 {
-	for (auto pair : lut)
-		if (pair.key == needle)
-			return pair.value;
+	for (auto p : lut)
+		if (p.first == needle)
+			return p.second;
 
 	return notFoundValue;
 }
@@ -27,7 +21,7 @@ V lookup(K needle, TranslatePair<K,V> (&lut)[N], V notFoundValue = nullptr)
 // doesn't work of course, because lookup() is not specialized
 const wchar_t* translateTest1(const wchar_t* v)
 {
-	static TranslatePair<const wchar_t*, const wchar_t*> TRANSLATE_TABLE[] = {
+	static std::pair<const wchar_t*, const wchar_t*> TRANSLATE_TABLE[] = {
 		{ L"key1", L"1. value" },
 		{ L"key2", L"2. value" },
 		{ L"key3", L"3. value" },
@@ -38,7 +32,7 @@ const wchar_t* translateTest1(const wchar_t* v)
 
 const int translateTest2(const int v)
 {
-	static TranslatePair<int, int> TRANSLATE_TALBE[] = {
+	static std::pair<int, int> TRANSLATE_TALBE[] = {
 		{ 1, 42 },
 		{ 2, 666 },
 		{ 3, 1337 },
