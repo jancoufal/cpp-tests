@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nearestUpperPowerOfTwo", "n
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scopeGuard11", "scopeGuard11\scopeGuard11.vcxproj", "{B0D9560E-A94E-4F1D-B646-3B68F13B8F05}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "staticTranslateTable", "staticTranslateTable\staticTranslateTable.vcxproj", "{185ED0CE-2D7B-4107-B2BF-7527028B032B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{B0D9560E-A94E-4F1D-B646-3B68F13B8F05}.Release|x64.Build.0 = Release|x64
 		{B0D9560E-A94E-4F1D-B646-3B68F13B8F05}.Release|x86.ActiveCfg = Release|Win32
 		{B0D9560E-A94E-4F1D-B646-3B68F13B8F05}.Release|x86.Build.0 = Release|Win32
+		{185ED0CE-2D7B-4107-B2BF-7527028B032B}.Debug|x64.ActiveCfg = Debug|x64
+		{185ED0CE-2D7B-4107-B2BF-7527028B032B}.Debug|x64.Build.0 = Debug|x64
+		{185ED0CE-2D7B-4107-B2BF-7527028B032B}.Debug|x86.ActiveCfg = Debug|Win32
+		{185ED0CE-2D7B-4107-B2BF-7527028B032B}.Debug|x86.Build.0 = Debug|Win32
+		{185ED0CE-2D7B-4107-B2BF-7527028B032B}.Release|x64.ActiveCfg = Release|x64
+		{185ED0CE-2D7B-4107-B2BF-7527028B032B}.Release|x64.Build.0 = Release|x64
+		{185ED0CE-2D7B-4107-B2BF-7527028B032B}.Release|x86.ActiveCfg = Release|Win32
+		{185ED0CE-2D7B-4107-B2BF-7527028B032B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
