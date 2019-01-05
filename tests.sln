@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nearestUpperPowerOfTwo", "nearestUpperPowerOfTwo\nearestUpperPowerOfTwo.vcxproj", "{EA2D32A4-32B9-48A6-AB3D-CB2A9D6497A5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scopeGuard", "scopeGuard\scopeGuard.vcxproj", "{357109A5-4303-4AD3-BCD9-09F37DFA3869}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scopeGuard11", "scopeGuard11\scopeGuard11.vcxproj", "{B0D9560E-A94E-4F1D-B646-3B68F13B8F05}"
 EndProject
 Global
@@ -25,14 +23,6 @@ Global
 		{EA2D32A4-32B9-48A6-AB3D-CB2A9D6497A5}.Release|x64.Build.0 = Release|x64
 		{EA2D32A4-32B9-48A6-AB3D-CB2A9D6497A5}.Release|x86.ActiveCfg = Release|Win32
 		{EA2D32A4-32B9-48A6-AB3D-CB2A9D6497A5}.Release|x86.Build.0 = Release|Win32
-		{357109A5-4303-4AD3-BCD9-09F37DFA3869}.Debug|x64.ActiveCfg = Debug|x64
-		{357109A5-4303-4AD3-BCD9-09F37DFA3869}.Debug|x64.Build.0 = Debug|x64
-		{357109A5-4303-4AD3-BCD9-09F37DFA3869}.Debug|x86.ActiveCfg = Debug|Win32
-		{357109A5-4303-4AD3-BCD9-09F37DFA3869}.Debug|x86.Build.0 = Debug|Win32
-		{357109A5-4303-4AD3-BCD9-09F37DFA3869}.Release|x64.ActiveCfg = Release|x64
-		{357109A5-4303-4AD3-BCD9-09F37DFA3869}.Release|x64.Build.0 = Release|x64
-		{357109A5-4303-4AD3-BCD9-09F37DFA3869}.Release|x86.ActiveCfg = Release|Win32
-		{357109A5-4303-4AD3-BCD9-09F37DFA3869}.Release|x86.Build.0 = Release|Win32
 		{B0D9560E-A94E-4F1D-B646-3B68F13B8F05}.Debug|x64.ActiveCfg = Debug|x64
 		{B0D9560E-A94E-4F1D-B646-3B68F13B8F05}.Debug|x64.Build.0 = Debug|x64
 		{B0D9560E-A94E-4F1D-B646-3B68F13B8F05}.Debug|x86.ActiveCfg = Debug|Win32
