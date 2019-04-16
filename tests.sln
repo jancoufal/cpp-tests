@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scopeGuard11", "scopeGuard1
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "staticTranslateTable", "staticTranslateTable\staticTranslateTable.vcxproj", "{185ED0CE-2D7B-4107-B2BF-7527028B032B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "overriddenMethodCall", "overriddenMethodCall\overriddenMethodCall.vcxproj", "{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{185ED0CE-2D7B-4107-B2BF-7527028B032B}.Release|x64.Build.0 = Release|x64
 		{185ED0CE-2D7B-4107-B2BF-7527028B032B}.Release|x86.ActiveCfg = Release|Win32
 		{185ED0CE-2D7B-4107-B2BF-7527028B032B}.Release|x86.Build.0 = Release|Win32
+		{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}.Debug|x64.ActiveCfg = Debug|x64
+		{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}.Debug|x64.Build.0 = Debug|x64
+		{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}.Debug|x86.ActiveCfg = Debug|Win32
+		{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}.Debug|x86.Build.0 = Debug|Win32
+		{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}.Release|x64.ActiveCfg = Release|x64
+		{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}.Release|x64.Build.0 = Release|x64
+		{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}.Release|x86.ActiveCfg = Release|Win32
+		{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
