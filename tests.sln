@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "staticTranslateTable", "sta
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "overriddenMethodCall", "overriddenMethodCall\overriddenMethodCall.vcxproj", "{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "selfDelete", "selfDelete\selfDelete.vcxproj", "{9A1B81B2-8784-4D0E-BA75-41435390CC4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}.Release|x64.Build.0 = Release|x64
 		{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}.Release|x86.ActiveCfg = Release|Win32
 		{2C792078-2E7E-4F5C-9F0B-A0E469D93C93}.Release|x86.Build.0 = Release|Win32
+		{9A1B81B2-8784-4D0E-BA75-41435390CC4C}.Debug|x64.ActiveCfg = Debug|x64
+		{9A1B81B2-8784-4D0E-BA75-41435390CC4C}.Debug|x64.Build.0 = Debug|x64
+		{9A1B81B2-8784-4D0E-BA75-41435390CC4C}.Debug|x86.ActiveCfg = Debug|Win32
+		{9A1B81B2-8784-4D0E-BA75-41435390CC4C}.Debug|x86.Build.0 = Debug|Win32
+		{9A1B81B2-8784-4D0E-BA75-41435390CC4C}.Release|x64.ActiveCfg = Release|x64
+		{9A1B81B2-8784-4D0E-BA75-41435390CC4C}.Release|x64.Build.0 = Release|x64
+		{9A1B81B2-8784-4D0E-BA75-41435390CC4C}.Release|x86.ActiveCfg = Release|Win32
+		{9A1B81B2-8784-4D0E-BA75-41435390CC4C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
