@@ -43,7 +43,7 @@ struct C : B {
 	}
 
 	~C() {
-		_tprintf(_T("B::~B()\n"));
+		_tprintf(_T("C::~C()\n"));
 	}
 
 	A m_a;
