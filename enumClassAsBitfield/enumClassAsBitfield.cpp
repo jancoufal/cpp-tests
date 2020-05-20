@@ -36,13 +36,16 @@ typename std::enable_if<enable_bitmask_operators<E>::enable, bool>::type operato
 	return bitField & static_cast<std::underlying_type_t<E>>(enumValue);
 }
 
+// enable bitfield macro
+#define ENABLE_ENUM_CLASS_BITFIELD(ENUM_TYPE) \
+	using ENUM_TYPE##BitField = std::underlying_type_t<ENUM_TYPE>; \
+	template<> struct enable_bitmask_operators<ENUM_TYPE> { \
+		static constexpr bool enable = true; \
+	}
+
 // bitwise enabled
-enum class ColorBit : uint16_t { red = 1, green = 2, blue = 4, alpha = 8 };
-using ColorBitField = std::underlying_type<ColorBit>::type;
-template<> struct enable_bitmask_operators<ColorBit>
-{
-	static constexpr bool enable = true;
-};
+enum class Color : uint16_t { red = 1, green = 2, blue = 4, alpha = 8 };
+ENABLE_ENUM_CLASS_BITFIELD(Color);
 
 // bitwise disabled
 enum class Rotation { pitch, roll, yaw };
@@ -51,20 +54,20 @@ enum class Rotation { pitch, roll, yaw };
 void printColors(ColorBitField colors)
 {
 	printf("Colors: ");
-	if (colors & ColorBit::red)
+	if (colors & Color::red)
 		printf("Red ");
-	if (colors & ColorBit::green)
+	if (colors & Color::green)
 		printf("Green ");
-	if (colors & ColorBit::blue)
+	if (colors & Color::blue)
 		printf("Blue ");
-	if (colors & ColorBit::alpha)
+	if (colors & Color::alpha)
 		printf("Alpha ");
 	printf("\n");
 }
 
 int main()
 {
-	ColorBitField colors = ColorBit::red | ColorBit::alpha;
+	ColorBitField colors = Color::red | Color::alpha;
 	printColors(colors);
 	
 	//Rotation rotaions = Rotation::yaw | Rotation::roll;
